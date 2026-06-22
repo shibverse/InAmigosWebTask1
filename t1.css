@@ -1,0 +1,327 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    line-height:1.6;
+
+    background:#f5f5f5;
+
+    color:#333;
+
+}
+.logo{
+    width: 400px;
+    height: auto;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: white;
+}
+header h1{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+main{
+    padding:40px;
+}
+.hero{
+    background-image: url("hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero h1,
+.hero p,
+.hero img{
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1{
+    color: white;
+    font-size: 60px;
+}
+
+.hero p{
+    color: white;
+    font-size: 24px;
+    max-width: 900px;
+}
+
+#about{
+
+    background:white;
+
+    padding:50px;
+
+    margin-top:30px;
+
+    border-radius:10px;
+
+}
+#about h2{
+
+    color:#2E8B57;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+#about p{
+
+    font-size:18px;
+
+    text-align:justify;
+
+    margin-bottom:20px;
+
+}
+#about h3{
+
+    color:#2E8B57;
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+}
+#projects{
+    margin-top:40px;
+}
+
+#projects h2{
+    text-align:center;
+    color:#2E8B57;
+    font-size:40px;
+    margin-bottom:40px;
+}
+.project-card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+.project-card h3{
+    color:#2E8B57;
+    margin-bottom:15px;
+}
+.project-card p{
+    font-size:17px;
+    line-height:1.7;
+}
+.projects-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+.project-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+    border-top:5px solid #2E8B57;
+
+    transition:0.3s ease;
+
+}
+.project-card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+.project-card:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.2);
+
+    cursor:pointer;
+
+}
+#impact{
+
+    margin-top:70px;
+
+}
+
+#impact h2{
+
+    text-align:center;
+
+    color:#2E8B57;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.impact-intro{
+
+    text-align:center;
+
+    width:70%;
+
+    margin:0 auto 40px;
+
+    font-size:18px;
+
+}
+.impact-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+.impact-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    border-top:5px solid #2E8B57;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s ease;
+
+}
+.impact-card img{
+
+    width:100%;
+
+    height:450px;
+
+    object-fit:cover;
+
+    border-radius:10px 10px 0 0;
+
+    margin-bottom:20px;
+
+}
+.impact-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.2);
+
+}
+.impact-card h3{
+
+    color:#2E8B57;
+
+    margin-bottom:15px;
+
+}
+
+
+#support{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+#support h2{
+
+    color:#2E8B57;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+#support p{
+
+    font-size:20px;
+
+    max-width:900px;
+
+    margin:15px auto;
+
+    line-height:1.8;
+
+}
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+    margin-top:70px;
+
+}
+footer h2{
+
+    margin-bottom:20px;
+
+}
+footer p{
+
+    margin:10px 0;
+
+}
+html{
+
+    scroll-behavior:smooth;
+
+}
